@@ -1,2 +1,0 @@
-# SoftUni-Studying
-Practicing

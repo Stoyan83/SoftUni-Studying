@@ -12,7 +12,6 @@
 
 <tr>
   <th> Python </th>
-  <th> JavaScript </th>
 </tr>
 
 <tr>

@@ -2,4 +2,4 @@
 Practicing
 
 
-{https://softuni.bg/trainings/courses}
+Soft Uni{https://softuni.bg/trainings/courses}

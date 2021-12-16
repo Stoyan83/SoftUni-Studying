@@ -1,21 +1,8 @@
-<a href="https://softuni.bg/trainings/courses" rel="Courses"> ![SoftUni logo][logo] </a>
+<a href="https://softuni.bg/trainings/courses"> ![SoftUni logo][logo] </a>
 
-[logo]: https://www.nakov.com/wp-content/uploads/2014/01/Software-University-Logo-blue-horizontal.png "Logo Title Text 2"
+[logo]: https://www.nakov.com/wp-content/uploads/2014/01/Software-University-Logo-blue-horizontal.png "L"
 
-<br/>
-<br/>
-<br/>
 
-<h2> Certificates </h2>
-
-<table>
-
-<tr>
-  <th> Python </th>
-</tr>
-
-<tr>
-<td>
 
 | **Course**                                                                                                                         | **Certificate**                                                                   |
 | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |

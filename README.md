@@ -1,7 +1,6 @@
 
 
 [![SoftUni logo](https://www.nakov.com/wp-content/uploads/2014/01/Software-University-Logo-blue-horizontal.png)](https://softuni.bg/trainings/courses)
-
 <style>
 table, td, th {
   border: 1px solid;

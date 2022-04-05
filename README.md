@@ -17,14 +17,14 @@
     <th>Certificates</th>
   </tr>
   <tr>
-    <td><a ref ='https://softuni.bg/trainings/3516/programming-basics-with-python-november-20211'>Programming Basics with Python</a>  </td></td>
-    <td><a ref ='https://softuni.bg/certificates/details/121421/0b9b06b1'>Certificate</a>  </td>
+    <td><a href ='https://softuni.bg/trainings/3516/programming-basics-with-python-november-20211'>Programming Basics with Python</a>  </td></td>
+    <td><a href ='https://softuni.bg/certificates/details/121421/0b9b06b1'>Certificate</a>  </td>
     <td>Course</td>
     <td>Certificate</td>
     
   </tr>
   <tr>
-    <td><a ref ='https://softuni.bg/modules/106/fundamentals-module/1316'>Python Fundamentals</a></td>
+    <td><a href ='https://softuni.bg/modules/106/fundamentals-module/1316'>Python Fundamentals</a></td>
     <td>In progress...</td>
     <td>&nbsp</td>
     <td>&nbsp</td>

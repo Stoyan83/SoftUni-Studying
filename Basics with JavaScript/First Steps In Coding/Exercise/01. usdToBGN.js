@@ -1,7 +1,7 @@
 function converter(input) {    
     let usd = input[0];
-    let lv = 1.79549 * usd;
-    console.log(lv)
+    let bgn = 1.79549 * usd;
+    console.log(bgn)
 }
 
 converter((["22"]))

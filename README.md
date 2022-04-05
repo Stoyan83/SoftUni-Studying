@@ -2,23 +2,17 @@
 
 [![SoftUni logo](https://www.nakov.com/wp-content/uploads/2014/01/Software-University-Logo-blue-horizontal.png)](https://softuni.bg/trainings/courses)
 
-<style type='text/css'>
-table {
-  width: 100%;
-  border: 1px solid;
-}
+ 
  <table>
-   <tr>
-    <th>Python</th>
-    <th>&nbsp</th>
-    <th>JavaScript</th>
-    <th>&nbsp</th>
+  <tr>
+    <td colspan="2">Python</td>
+    <td colspan="2">JavaScript</td>
   </tr>
   <tr>
-    <th>Course</th>
-    <th>Certificate</th>
-    <th>Course</th>
-    <th>Certificates</th>
+    <td>Course</td>
+    <td>Certificate</td>
+    <td>Course</td>
+    <td>Certificates</td>
   </tr>
   <tr>
     <td><a href ='https://softuni.bg/trainings/3516/programming-basics-with-python-november-20211'>Programming Basics with Python</a>  </td></td>
@@ -33,11 +27,5 @@ table {
     <td>&nbsp</td>
     <td>&nbsp</td>
   </tr>
-  <tr>
-    <td>&nbsp</td>
-    <td>&nbsp</td>
-    <td>&nbsp</td>
-    <td>&nbsp</td>
-  </tr>
-</table>
 
+</table>

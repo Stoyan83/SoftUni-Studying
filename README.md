@@ -3,13 +3,14 @@
 [![SoftUni logo](https://www.nakov.com/wp-content/uploads/2014/01/Software-University-Logo-blue-horizontal.png)](https://softuni.bg/trainings/courses)
 
 
-<style>
+<!-- <style>
 table {
   width: 100%;
   border: 1px solid;
 }
-</style>
- <table>
+</style > -->
+ <table   width: 100%;
+  border: 1px solid;>
    <tr>
     <th>Python</th>
     <th>&nbsp</th>

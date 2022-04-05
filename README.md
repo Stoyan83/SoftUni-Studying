@@ -7,8 +7,7 @@ table {
   width: 100%;
   border: 1px solid;
 }
- <table   width: 100%;
-  border: 1px solid;>
+ <table>
    <tr>
     <th>Python</th>
     <th>&nbsp</th>

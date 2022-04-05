@@ -2,7 +2,7 @@
 
 [![SoftUni logo](https://www.nakov.com/wp-content/uploads/2014/01/Software-University-Logo-blue-horizontal.png)](https://softuni.bg/trainings/courses)
 
-<!-- 
+
  <table>
    <tr>
     <th>Python</th>

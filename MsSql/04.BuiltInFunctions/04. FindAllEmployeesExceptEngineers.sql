@@ -1,3 +1,4 @@
-SELECT FirstName, LastName
+SELECT FirstName, 
+       LastName
 FROM Employees
-WHERE JobTitle LIKE 'engineer'
+WHERE JobTitle NOT LIKE '%engineer%'

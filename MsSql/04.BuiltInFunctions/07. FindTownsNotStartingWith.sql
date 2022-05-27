@@ -1,4 +1,5 @@
-SELECT TownID, [Name]
+SELECT TownId, 
+       [Name]
 FROM Towns
-WHERE [Name] LIKE '[^RBD]%'
-ORDER BY [Name]
+WHERE LEFT([Name], 1) NOT IN('R', 'D', 'B')
+ORDER BY [Name];

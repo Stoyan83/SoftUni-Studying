@@ -1,3 +1,4 @@
 SELECT [Name]
 FROM Towns
-WHERE LEN([Name]) IN (5,6)
+WHERE len([Name]) BETWEEN 5 AND 6
+ORDER BY [Name]

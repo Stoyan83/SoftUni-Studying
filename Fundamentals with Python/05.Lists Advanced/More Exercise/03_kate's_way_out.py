@@ -1,68 +1,54 @@
-rows = int(input())
+def is_inside(row, col, matrix):
+    if row >= 0 and row < len(matrix) and col >= 0 and col < len(matrix[0]):
+        return True
+    return False
 
-maze = [list(input()) for row in range(rows)]
 
-for row_k in range(rows):
-    if "k" in maze[row_k]:
-        place_of_k = [row_k, maze[row_k].index("k")]
+def moving(row, col, matrix):
+    moves = [0, 1, 0, -1, 1, 0, -1, 0]
 
-no_way_out = False
-break_flag = False
+    for i in range(0, len(moves), 2):
+        if is_inside(row + moves[i], col + moves[i + 1], matrix):
+            if matrix[row + moves[i]][col + moves[i + 1]] == " ":
+                return row + moves[i], col + moves[i + 1]
+    for i in range(0, len(moves), 2):
+        if not is_inside(row + moves[i], col + moves[i + 1], matrix):
+            return -1, - 1
+
+    return -2, -2
+
+
+size = int(input())
+
+matrix = []
+kates_row = 0
+kates_col = 0
+
+for row in range(size):
+    matrix.append(list(input()))
+    for col in range(len(matrix[row])):
+        if matrix[row][col] == "k":
+            kates_row = row
+            kates_col = col
 
 moves = 0
+out = False
 
 while True:
-    if break_flag:
-        moves += 1
+    current_row, current_col = moving(kates_row, kates_col, matrix)
+
+    matrix[kates_row][kates_col] = "."
+    moves += 1
+
+    if current_row == -1:
+        out = True
         break
-    no_more_col = True
-    no_more_row = True
-    while True:
-        for column in range(place_of_k[1] - 1, place_of_k[1] + 2):
-            no_more_col = True
-            if " " not in maze[place_of_k[0]]:
-                break
-            if maze[place_of_k[0]][column] == " ":
-                maze[place_of_k[0]][place_of_k[1]] = "*"
-                maze[place_of_k[0]][column] = "k"
-                place_of_k = [place_of_k[0], column]
-                no_more_col = False
-                moves += 1
-                break
-        for el in range(len(maze)):
-            if ((maze[el][0] == "k" and maze[el][1] != " ") and (
-                    maze[el][0] == "k" and maze[el + 1][0] != " ") and (
-                        maze[el][0] == "k" and maze[el - 1][0] != " ")) or (
-                    (maze[el][-1] == "k" and maze[el][-2] != " ") and (
-                    maze[el][-1] == "k" and maze[el + 1][-2] != " ") and (
-                            maze[el][-1] == "k" and maze[el - 1][-2] != " ")):
-                break_flag = True
-                no_more_col = False
-                break
+    if current_row == -2:
         break
 
-    while True:
-        for row in range(place_of_k[0] - 1, place_of_k[0] + 2):
-            no_more_row =True
-            if row < 0:
-                continue
-            if "k" in maze[rows - 1] and " " not in maze[rows - 2]:
-                break
-            if maze[row][place_of_k[1]] == " ":
-                maze[place_of_k[0]][place_of_k[1]] = "*"
-                maze[row][place_of_k[1]] = "k"
-                place_of_k = [row, place_of_k[1]]
-                no_more_row = False
-                moves += 1
-                break
-        if ("k" in maze[0] and " " not in maze[0]) or ("k" in maze[rows - 1] and " " not in maze[rows - 1]):
-            break_flag = True
-            break
-        break
-    if no_more_col and no_more_row:
-        no_way_out = True
-        break
-if no_way_out:
-    print("Kate cannot get out")
-else:
+    kates_row, kates_col = current_row, current_col
+
+if out:
     print(f"Kate got out in {moves} moves")
+else:
+    print("Kate cannot get out")

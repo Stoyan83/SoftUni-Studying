@@ -8,8 +8,8 @@ FROM
 ROW_NUMBER() OVER(ORDER BY ug.Cash DESC) AS RowNum
 FROM Games g
 JOIN UsersGames ug ON g.Id = ug.GameId
-WHERE g.Name = @GameName) AS ?
-WHERE ?.RowNum % 2 != 0
+WHERE g.Name = @GameName) AS RowNum
+WHERE RowNum % 2 != 0
 
 GO
 

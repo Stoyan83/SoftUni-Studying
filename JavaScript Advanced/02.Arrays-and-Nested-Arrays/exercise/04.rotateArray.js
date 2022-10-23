@@ -1,0 +1,11 @@
+function solve(arr, num) {
+  for (let i = 0; i < num; i++) {
+    let newNum = arr.pop();
+    arr.unshift(newNum);
+  }
+  console.log(arr.join(" "));
+}
+
+solve(["1", "2", "3", "4"], 2);
+
+solve(["Banana", "Orange", "Coconut", "Apple"], 15);
